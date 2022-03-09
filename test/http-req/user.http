@@ -1,0 +1,25 @@
+GET http://127.0.0.1:3000/user
+
+###
+GET http://127.0.0.1:3000/user/1
+
+###
+POST http://127.0.0.1:3000/user HTTP/1.1
+content-type: application/json
+
+{
+    "name": "name1",
+    "lastName": "surname1"
+}
+
+###
+PATCH  http://127.0.0.1:3000/user/1 HTTP/1.1
+content-type: application/json
+
+{
+    "name": "nameUpdated2",
+    "lastName": "surnameUpdated2"
+}
+
+###
+DELETE  http://127.0.0.1:3000/user/1
